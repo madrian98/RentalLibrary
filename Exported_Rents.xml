@@ -1,0 +1,226 @@
+<Rents>
+  <Rent>
+    <id>11</id>
+    <person>
+      <id>15</id>
+      <firstName>Leon           </firstName>
+      <lastName>Garcia                        </lastName>
+      <age>18</age>
+      <phoneNumber>9439439492</phoneNumber>
+      <email>garcia@gmail.com                                  </email>
+      <address>
+        <city>Miami          </city>
+        <street>Main                          </street>
+        <houseNumber>232</houseNumber>
+      </address>
+    </person>
+    <book>
+      <id>17</id>
+      <authors>
+        <Author>
+          <id>11</id>
+          <firstName>Steven         </firstName>
+          <lastName>King                          </lastName>
+          <age>74</age>
+        </Author>
+      </authors>
+      <title>Firestarter                                                 </title>
+      <release__year>1980</release__year>
+      <genre>Novel                         </genre>
+    </book>
+    <rent__startingDate>2022-08-17T21:30:23.327Z</rent__startingDate>
+    <rent__DeadLine>2022-09-15T21:30:23.327Z</rent__DeadLine>
+  </Rent>
+  <Rent>
+    <id>12</id>
+    <person>
+      <id>15</id>
+      <firstName>Leon           </firstName>
+      <lastName>Garcia                        </lastName>
+      <age>18</age>
+      <phoneNumber>9439439492</phoneNumber>
+      <email>garcia@gmail.com                                  </email>
+      <address>
+        <city>Miami          </city>
+        <street>Main                          </street>
+        <houseNumber>232</houseNumber>
+      </address>
+    </person>
+    <book>
+      <id>18</id>
+      <authors>
+        <Author>
+          <id>11</id>
+          <firstName>Steven         </firstName>
+          <lastName>King                          </lastName>
+          <age>74</age>
+        </Author>
+      </authors>
+      <title>The Running Man                                             </title>
+      <release__year>1982</release__year>
+      <genre>Novel                         </genre>
+    </book>
+    <rent__startingDate>2022-08-17T21:30:23.327Z</rent__startingDate>
+    <rent__DeadLine>2022-09-15T21:30:23.327Z</rent__DeadLine>
+  </Rent>
+  <Rent>
+    <id>13</id>
+    <person>
+      <id>16</id>
+      <firstName>Sue            </firstName>
+      <lastName>Park                          </lastName>
+      <age>24</age>
+      <phoneNumber>4329439493</phoneNumber>
+      <email>parksu@1gmail123.com                              </email>
+      <address>
+        <city>Detroit        </city>
+        <street>Lake                          </street>
+        <houseNumber>54</houseNumber>
+      </address>
+    </person>
+    <book>
+      <id>19</id>
+      <authors>
+        <Author>
+          <id>11</id>
+          <firstName>Steven         </firstName>
+          <lastName>King                          </lastName>
+          <age>74</age>
+        </Author>
+      </authors>
+      <title>The Stand                                                   </title>
+      <release__year>1990</release__year>
+      <genre>Novel                         </genre>
+    </book>
+    <rent__startingDate>2022-08-10T21:30:23.327Z</rent__startingDate>
+    <rent__DeadLine>2022-09-15T21:30:23.327Z</rent__DeadLine>
+  </Rent>
+  <Rent>
+    <id>14</id>
+    <person>
+      <id>16</id>
+      <firstName>Sue            </firstName>
+      <lastName>Park                          </lastName>
+      <age>24</age>
+      <phoneNumber>4329439493</phoneNumber>
+      <email>parksu@1gmail123.com                              </email>
+      <address>
+        <city>Detroit        </city>
+        <street>Lake                          </street>
+        <houseNumber>54</houseNumber>
+      </address>
+    </person>
+    <book>
+      <id>20</id>
+      <authors>
+        <Author>
+          <id>11</id>
+          <firstName>Steven         </firstName>
+          <lastName>King                          </lastName>
+          <age>74</age>
+        </Author>
+      </authors>
+      <title>Black House                                                 </title>
+      <release__year>2001</release__year>
+      <genre>Novel                         </genre>
+    </book>
+    <rent__startingDate>2022-07-13T21:30:23.327Z</rent__startingDate>
+    <rent__DeadLine>2022-08-19T21:30:23.327Z</rent__DeadLine>
+  </Rent>
+  <Rent>
+    <id>15</id>
+    <person>
+      <id>18</id>
+      <firstName>Alice          </firstName>
+      <lastName>Walker                        </lastName>
+      <age>21</age>
+      <phoneNumber>4020420340</phoneNumber>
+      <email>alice.walker@random.org.mail                      </email>
+      <address>
+        <city>Dover          </city>
+        <street>RiverBank                     </street>
+        <houseNumber>1</houseNumber>
+      </address>
+    </person>
+    <book>
+      <id>37</id>
+      <authors>
+        <Author>
+          <id>14</id>
+          <firstName>Alice          </firstName>
+          <lastName>Walker                        </lastName>
+          <age>78</age>
+        </Author>
+      </authors>
+      <title>The Third Life of Grange Copeland                           </title>
+      <release__year>1970</release__year>
+      <genre>Novel                         </genre>
+    </book>
+    <rent__startingDate>2022-07-12T21:30:23.327Z</rent__startingDate>
+    <rent__DeadLine>2022-08-18T21:30:23.327Z</rent__DeadLine>
+  </Rent>
+  <Rent>
+    <id>16</id>
+    <person>
+      <id>17</id>
+      <firstName>John           </firstName>
+      <lastName>Miller                        </lastName>
+      <age>36</age>
+      <phoneNumber>3403403044</phoneNumber>
+      <email>johnmiller@randommail.org                         </email>
+      <address>
+        <city>Liverpool      </city>
+        <street>Church Road                   </street>
+        <houseNumber>99</houseNumber>
+      </address>
+    </person>
+    <book>
+      <id>25</id>
+      <authors>
+        <Author>
+          <id>12</id>
+          <firstName>Ian            </firstName>
+          <lastName>McEwan                        </lastName>
+          <age>74</age>
+        </Author>
+      </authors>
+      <title>The Cockroach                                               </title>
+      <release__year>2019</release__year>
+      <genre>Novel                         </genre>
+    </book>
+    <rent__startingDate>2022-06-08T21:30:23.327Z</rent__startingDate>
+    <rent__DeadLine>2022-08-02T21:30:23.327Z</rent__DeadLine>
+  </Rent>
+  <Rent>
+    <id>17</id>
+    <person>
+      <id>13</id>
+      <firstName>Mark           </firstName>
+      <lastName>Johnson                       </lastName>
+      <age>25</age>
+      <phoneNumber>985353548 </phoneNumber>
+      <email>johnson@gmail.com                                 </email>
+      <address>
+        <city>New York       </city>
+        <street>Third                         </street>
+        <houseNumber>5353</houseNumber>
+      </address>
+    </person>
+    <book>
+      <id>22</id>
+      <authors>
+        <Author>
+          <id>11</id>
+          <firstName>Steven         </firstName>
+          <lastName>King                          </lastName>
+          <age>74</age>
+        </Author>
+      </authors>
+      <title>The Outsider                                                </title>
+      <release__year>2018</release__year>
+      <genre>Novel                         </genre>
+    </book>
+    <rent__startingDate>2022-08-17T21:30:23.327Z</rent__startingDate>
+    <rent__DeadLine>2022-10-19T21:30:23.327Z</rent__DeadLine>
+  </Rent>
+</Rents>

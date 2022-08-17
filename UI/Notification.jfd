@@ -1,0 +1,69 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[886,fill]"
+			"$rowConstraints": "[][]"
+		} ) {
+			name: "oknoGlowne"
+			"preferredSize": new java.awt.Dimension( 900, 500 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Niezakończone wypożyczenia ze zbliżającą się datą zwrotu"
+				"horizontalTextPosition": 0
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 0, 26 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPaneKalendarzTabelaWypozyczen"
+				"preferredSize": new java.awt.Dimension( 800, 400 )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "powiadomieniatabelaWypozyczen"
+					"preferredSize": new java.awt.Dimension( 700, 400 )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "ID" )
+						add( "Klient" )
+						add( "Książka" )
+						add( "Data wypożyczenia" )
+						add( "Termin oddania" )
+						add( "Data oddania" )
+					}, new java.util.Vector {
+						add( class java.lang.Integer )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+						add( class java.lang.Object )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"preferredScrollableViewportSize": new java.awt.Dimension( 450, 0 )
+					"opaque": false
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 905, 735 )
+		} )
+	}
+}
+

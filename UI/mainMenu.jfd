@@ -1,0 +1,734 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "GUIMenu"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panelGorny"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "settings"
+					"text": "Ustawienia"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ustawieniaActionPerformed", true ) )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "informacjeOProgramie"
+					"text": "Informacje o programie"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "informacjeOProgramieActionPerformed", true ) )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer1"
+					"minimumSize": new java.awt.Dimension( 1000, 12 )
+					"preferredSize": new java.awt.Dimension( 700, 10 )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "East"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "zakladki"
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "kartoteki"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "insets 0,hidemode 3,gap 0 0"
+						"$columnConstraints": "[grow,fill]"
+						"$rowConstraints": "[grow,fill]"
+					} ) {
+						name: "kartotekaKlienci"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPaneTabelaKlientow"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tabelaKlientow"
+								"preferredSize": new java.awt.Dimension( 700, 800 )
+								"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+									add( "ID" )
+									add( "Imię" )
+									add( "Nazwisko" )
+									add( "Wiek" )
+									add( "Numer telefonu" )
+									add( "Adres e-mail" )
+									add( "Miasto" )
+									add( "Ulica" )
+									add( "Numer domu" )
+								}, new java.util.Vector {
+									add( class java.lang.Integer )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.Integer )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.Integer )
+								}, new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								}, new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								"autoCreateRowSorter": true
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+							"$layoutConstraints": "hidemode 3"
+							"$columnConstraints": "[fill]"
+							"$rowConstraints": "[][][][][][][][][][][][][][][][][]"
+						} ) {
+							name: "panelKlient"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientImie"
+								"text": "Imie"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 0"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientImie"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 1"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientNazwisko"
+								"text": "Nazwisko"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 2"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientNazwisko"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 3"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientWiek"
+								"text": "Wiek"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 4"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientWiek"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 5"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientNumerTelefonu"
+								"text": "Numer telefonu"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 6"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientNumerTelefonu"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 7"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientEmail"
+								"text": "Adres e-mail"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 8"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientEmail"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 9"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientMIasto"
+								"text": "Miasto"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 10"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientMiasto"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 11"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientUlica"
+								"text": "Ulica"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 12"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientUlica"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 13"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKlientNumerDomu"
+								"text": "Numer domu"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 14"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKlientNumerDomu"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 15"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonDodajKlienta"
+								"text": "Dodaj klienta"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonDodajKlientaActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 16"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonFiltrujKlientow"
+								"text": "Filtruj klientów"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonFiltrujKlientowActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 16"
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0"
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Klienci"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "insets 0,hidemode 3,gap 0 0"
+						"$columnConstraints": "[grow,fill]"
+						"$rowConstraints": "[grow,fill]"
+					} ) {
+						name: "kartotekaAutorzy"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPaneTabelaAutorow"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tabelaAutorow"
+								"preferredSize": &Dimension0 new java.awt.Dimension( 700, 800 )
+								"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+									add( "ID" )
+									add( "Imie" )
+									add( "Nazwisko" )
+									add( "Wiek" )
+								}, new java.util.Vector {
+									add( class java.lang.Integer )
+									add( class java.lang.String )
+									add( class java.lang.String )
+									add( class java.lang.Integer )
+								}, new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								}, new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								"preferredScrollableViewportSize": &Dimension1 new java.awt.Dimension( 450, 800 )
+								"autoCreateRowSorter": true
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+							"$layoutConstraints": "hidemode 3"
+							"$columnConstraints": "[fill][fill]"
+							"$rowConstraints": "[][][][][][][]"
+						} ) {
+							name: "panelAutor"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelAutorImie"
+								"text": "Imie"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 0"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldAutorImie"
+								"cursor": &Cursor0 new java.awt.Cursor( 2 )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 1"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelAutorNazwisko"
+								"text": "Nazwisko"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 2"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldAutorNazwisko"
+								"cursor": #Cursor0
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 3"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelAutorWIek"
+								"text": "Wiek"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 4"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldAutorWiek"
+								"cursor": #Cursor0
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 5"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonDodajAutora"
+								"text": "Dodaj autora"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonDodajAutoraActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 6"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonFiltrujAutorow"
+								"text": "Filtruj autorów"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonFiltrujAutorowActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 6"
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0"
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Autorzy"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+						name: "kartotekaKsiazki"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPaneTabelaKsiazek"
+							"verticalScrollBarPolicy": 22
+							"preferredSize": new java.awt.Dimension( 500, 1500 )
+							"horizontalScrollBarPolicy": 32
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tabelaKsiazek"
+								"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+									add( "ID" )
+									add( "Tytuł" )
+									add( "Rok wydania" )
+									add( "Gatunek" )
+									add( "Autorzy" )
+								}, new java.util.Vector {
+									add( class java.lang.Integer )
+									add( class java.lang.Object )
+									add( class java.lang.Integer )
+									add( class java.lang.Object )
+									add( class java.lang.String )
+								}, new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								}, new java.util.Vector {
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( new com.jformdesigner.model.SwingTableColumn( null, 300, 0, 0, true ) )
+								} )
+								"preferredScrollableViewportSize": new java.awt.Dimension( 450, 1500 )
+								"autoCreateRowSorter": true
+								"minimumSize": new java.awt.Dimension( 75, 800 )
+								"maximumSize": new java.awt.Dimension( 2147483647, 2000 )
+								"opaque": false
+								auxiliary() {
+									"JavaCodeGenerator.postCreateCode": "tabelaKsiazek.setDefaultRenderer(String.class,new MultiLineCellRenderer());"
+								}
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+							"$layoutConstraints": "hidemode 3"
+							"$columnConstraints": "[grow,fill]"
+							"$rowConstraints": "[][][][][][][][][][][][][][][][][][][][][][][]"
+						} ) {
+							name: "panelKsiazka"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKsiazkaTytul"
+								"text": "Tytuł"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 0"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKsiazkaTytul"
+								"nextFocusableComponent": new FormReference( "textFieldKsiazkaRokWydania" )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 1"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKsiazkaRokWydania"
+								"text": "Rok wydania"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 2"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKsiazkaRokWydania"
+								"nextFocusableComponent": new FormReference( "textFieldKsiazkaGatunek" )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 3"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKsiazkaGatunek"
+								"text": "Gatunek"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 4"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldKsiazkaGatunek"
+								"nextFocusableComponent": new FormReference( "textFieldSzukajAutorowNazwisko" )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 5"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelKsiazkaAutorzy"
+								"text": "Autorzy"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 6"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelSzukajAutoraPoNazwisku"
+								"text": "Szukaj autora po nazwisku"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 7"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textFieldSzukajAutorowNazwisko"
+								"preferredSize": new java.awt.Dimension( 200, 30 )
+								addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "textFieldSzukajAutorowNazwiskoCaretUpdate", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 8"
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "comboBoxListaAutorowDoDodania"
+								auxiliary() {
+									"JavaCodeGenerator.postCreateCode": "DefaultComboBoxModel<BL.Author> modelAutorzyKsiazek=logic.uzupelnijComboBoxAutorzy(\"\");\ncomboBoxListaAutorowDoDodania.setModel(modelAutorzyKsiazek);"
+								}
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBoxListaAutorowDoDodaniaActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 10"
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPaneKsiazkaAutorzy"
+								add( new FormComponent( "javax.swing.JList" ) {
+									name: "listKsiazkaAutorzy"
+								} )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 11 1 9"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonResetujListeAutorow"
+								"text": "Resetuj listę autorów"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonResetujListeAutorowActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 20"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonDodajKsiazke"
+								"text": "Dodaj książkę"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonDodajKsiazkeActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 21"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonFiltrujKsiazki"
+								"text": "Filtruj książki"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonFiltrujKsiazkiActionPerformed", true ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 21"
+							} )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Książki"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Kartoteki"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets 0,hidemode 3,gap 0 0"
+					"$columnConstraints": "[grow,fill][fill][fill]"
+					"$rowConstraints": "[grow,fill][]"
+				} ) {
+					name: "kalendarz"
+					add( new FormComponent( "org.jdatepicker.JDatePanel" ) {
+						name: "datePanelKalendarz"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "datePanelKalendarzActionPerformed", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPaneKalendarzTabelaWypozyczen"
+						"preferredSize": new java.awt.Dimension( 600, 827 )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "KalendarztabelaWypozyczen"
+							"preferredSize": #Dimension0
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "ID" )
+								add( "Klient" )
+								add( "Książka" )
+								add( "Data wypożyczenia" )
+								add( "Termin oddania" )
+								add( "Data oddania" )
+							}, new java.util.Vector {
+								add( class java.lang.Integer )
+								add( class java.lang.String )
+								add( class java.lang.String )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"preferredScrollableViewportSize": #Dimension1
+							"autoCreateRowSorter": true
+							"inheritsPopupMenu": true
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "KalendarztabelaWypozyczenMouseReleased", true ) )
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Kalendarz"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets 0,hidemode 3"
+					"$columnConstraints": "[grow,left][fill]"
+					"$rowConstraints": "[][fill][]"
+				} ) {
+					name: "wypozyczenia"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "eksportWypozyczenDoXml"
+						"text": "Eksport wypożyczeń do XML"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "eksportWypozyczenDoXmlActionPerformed", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "importWypozyczenZXml"
+						"text": "Import wypożyczeń z XML"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "importWypozyczenZXmlActionPerformed", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPaneTabelaWypozyczen"
+						"preferredSize": new java.awt.Dimension( 0, 0 )
+						"minimumSize": new java.awt.Dimension( 1200, 827 )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "tabelaWypozyczen"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "ID" )
+								add( "Klient" )
+								add( "Książka" )
+								add( "Data wypożyczenia" )
+								add( "Termin oddania" )
+								add( "Data oddania" )
+							}, new java.util.Vector {
+								add( class java.lang.Integer )
+								add( class java.lang.String )
+								add( class java.lang.String )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+								add( class java.lang.Object )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"preferredScrollableViewportSize": #Dimension1
+							"autoCreateRowSorter": true
+							"inheritsPopupMenu": true
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "tabelaWypozyczenMouseReleased", true ) )
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3"
+						"$columnConstraints": "[fill][fill]"
+						"$rowConstraints": "[][][][][][][][][][][][][][][][][][][][][][][]"
+					} ) {
+						name: "panelWypozyczenie"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelWypozyczenieKlient"
+							"text": "Klient"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSzukajKlientaPoNazwisku"
+							"text": "Szukaj klienta po nazwisku"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "FieldSzukajKlientaPoNazwisku"
+							addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "FieldSzukajKlientaPoNazwiskuCaretUpdate", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBoxListaKlientowDoDodania"
+							auxiliary() {
+								"JavaCodeGenerator.postCreateCode": "DefaultComboBoxModel<BL.Person> modelWypozyczeniaKlienci=logic.uzupelnijComboBoxKlienci(\"\");\n        comboBoxListaKlientowDoDodania.setModel(modelWypozyczeniaKlienci);\n        comboBoxListaKlientowDoDodania.setRenderer(new DefaultListCellRenderer(){\n            @Override\n            public Component getListCellRendererComponent(final JList list, Object value, final int index, final boolean isSelected,\n                                                          final boolean cellHasFocus) {\n                Osoba person=(Osoba) value;\n                if(person!=null){\n                    value=\"ID: \" + person.getId() + \" Imie: \" + person.getImie() + \" Nazwisko: \" + person.getNazwisko();\n                }\n                return super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);\n            }\n        });"
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBoxListaKlientowDoDodaniaActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPaneWypozyczeniaKlient"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "listWypozyczeniaKlient"
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "ButtonResetujListeKlientow"
+							"text": "Resetuj listę klientów"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ButtonResetujListeKlientowActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelWypozyczenieKsiazka"
+							"text": "Książka"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSzukajKsiazkiPoTytule"
+							"text": "Szukaj ksiazki po tytule"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 8"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "FieldSzukajKsiazkiPoTytule"
+							addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "FieldSzukajKsiazkiPoTytuleCaretUpdate", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 9"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBoxListaKsiazekDoDodania"
+							auxiliary() {
+								"JavaCodeGenerator.postCreateCode": "DefaultComboBoxModel<BL.Book> modelWypozyczeniaKsiazki=logic.uzupelnijComboBoxKsiazki(\"\");\n        comboBoxListaKsiazekDoDodania.setModel(modelWypozyczeniaKsiazki);\ncomboBoxListaKsiazekDoDodania.setRenderer(new DefaultListCellRenderer(){\n            @Override\n            public Component getListCellRendererComponent(final JList list, Object value, final int index, final boolean isSelected,\n                                                          final boolean cellHasFocus) {\n                Ksiazka book=(Ksiazka) value;\n\t\t\t\tif(book!=null){\n                \tvalue=\"ID: \" + book.getId() + \" Tytuł: \" + book.getTytul();\n\t\t\t\t}\n                return super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);\n            }\n        });"
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBoxListaKsiazekDoDodaniaActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 10"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPaneWypozyczeniaKsiazka"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "listWypozyczeniaKsiazka"
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 11"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "ButtonResetujListeKsiazek"
+							"text": "Resetuj listę książek"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ButtonResetujListeKsiazekActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 12"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelWypozyczenieDataWypozyczenia"
+							"text": "Data wypożyczenia"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 13"
+						} )
+						add( new FormComponent( "org.jdatepicker.JDatePicker" ) {
+							name: "datePickerWypozyczenieDataWypozyczenia"
+							auxiliary() {
+								"JavaCodeGenerator.postCreateCode": "\t\t//LocalDate now= LocalDate.now();\n        //UtilDateModel utilDateModel= new UtilDateModel();\n        //utilDateModel.setDate(now.getYear(),now.getMonthValue()-1,now.getDayOfMonth());\n        //utilDateModel.setSelected(true);\n        //datePickerWypozyczenieDataWypozyczenia = new JDatePicker(utilDateModel);"
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 15"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelWypozyczenieTerminOddania"
+							"text": "Termin oddania"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 17"
+						} )
+						add( new FormComponent( "org.jdatepicker.JDatePicker" ) {
+							name: "datePickerWypozyczenieTerminOddania"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 18"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelWypozyczenieDataOddania"
+							"text": "Data oddania"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 19"
+						} )
+						add( new FormComponent( "org.jdatepicker.JDatePicker" ) {
+							name: "datePickerWypozyczenieDataOddania"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 20"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "buttonDodajWypozyczenie"
+							"text": "Dodaj wypożyczenie"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonDodajWypozyczenieActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 21"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "buttonFiltrujWypozyczenia"
+							"text": "Filtruj wypożyczenia"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonFiltrujWypozyczeniaActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 21"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 2"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Wypożyczenia"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 925, 625 )
+		} )
+	}
+}

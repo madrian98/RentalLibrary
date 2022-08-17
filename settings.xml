@@ -1,0 +1,11 @@
+<settings>
+  <Settings>
+    <server>localhost</server>
+    <instance>MSSQLSERVER</instance>
+    <login>sa</login>
+    <password>trawka</password>
+    <colorR>204</colorR>
+    <colorG>153</colorG>
+    <colorB>0</colorB>
+  </Settings>
+</settings>
