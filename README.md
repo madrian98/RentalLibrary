@@ -1,5 +1,5 @@
 # RentalLibrary
-Library type Java application connected with MSSQL Database by JDBC as uni project.<br>GUI made with swing with usage of JForm Designer.Application works with both console and GUI.<br>
+Library type Java application connected with MSSQL Database by JDBC as school project.<br>GUI made with swing with usage of JForm Designer.Application works with both console and GUI.<br>
  	<strong>Application Features:</strong><br>
 1. Adding new Clients/Authors/Books.<br>
 2. Filtering Clients/Authors/Books by its parameters.<br>
