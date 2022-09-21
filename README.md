@@ -13,4 +13,6 @@ Library type Java application connected with MSSQL Database by JDBC as school pr
 
 ![Gif](https://github.com/madrian98/RentalLibrary/blob/main/readme/appgif.gif)
 
+*** Worked with usage of other git repository - Azure , then uploaded to GitHub. This is why there are only 8 commits. ***
+
 
