@@ -10,9 +10,3 @@ Library type Java application connected with MSSQL Database by JDBC as school pr
 7. Change appearance of application background.<br>
 8. Works either with Graphical&Console user interface.<br>
 9. Possibility to import filtered rentals into application by XML file format or export them into XML. <br>
-
-![Gif](https://github.com/madrian98/RentalLibrary/blob/main/readme/appgif.gif)
-
-*** Worked with usage of other git repository - Azure , then uploaded to GitHub. This is why there are only 8 commits. ***
-
-
